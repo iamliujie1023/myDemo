@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.liuj.liujdemo" >
+          package="com.example.liuj.liujdemo">
 
     <application
         android:allowBackup="true"
@@ -8,16 +8,43 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".home.HomeAct" >
+        android:theme="@style/AppTheme">
+        <activity android:name=".home.HomeAct">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <activity android:name=".module.taskaffinity.ActController"/>
+
+        <activity android:name=".module.taskaffinity.singletop.ActA"
+            android:launchMode="singleTop"/>
+        <activity android:name=".module.taskaffinity.singletop.ActB"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActA"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActB"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActC"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActX"
+                  android:taskAffinity="liuj.singletask.test"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActY"
+                  android:taskAffinity="liuj.singletask.test"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".module.taskaffinity.singletask.ActZ"
+                  android:taskAffinity="liuj.singletask.test"
+                  android:launchMode="singleTask"/>
+
     </application>
 
 </manifest>
