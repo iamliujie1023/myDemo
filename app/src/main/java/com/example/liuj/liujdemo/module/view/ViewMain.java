@@ -1,10 +1,10 @@
-package com.example.liuj.liujdemo.home;
+package com.example.liuj.liujdemo.module.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,13 +13,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.liujdemo.R;
-import com.example.liuj.liujdemo.module.taskaffinity.ActController;
-import com.example.liuj.liujdemo.module.view.ViewMain;
+import com.example.liuj.liujdemo.home.IItemClickCallback;
+import com.example.liuj.liujdemo.module.view.position.ViewPositionAct;
+import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HomeAct extends AppCompatActivity implements IItemClickCallback {
+public class ViewMain extends AppCompatActivity implements IItemClickCallback {
 
     @BindView(R.id.main_rl)
     RecyclerView mRecyclerView;
@@ -27,12 +28,12 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     private MyAdapter mAdapter;
 
     private String[] strs = new String[]{
-            ActController.class.getSimpleName(),
-            ViewMain.class.getSimpleName()
+            ViewPositionAct.class.getSimpleName(),
+            ViewScrollScrollerAct.class.getSimpleName()
     };
     private Class<?>[] clzs = new Class[]{
-            ActController.class,
-            ViewMain.class
+            ViewPositionAct.class,
+            ViewScrollScrollerAct.class
     };
 
     @Override
@@ -57,7 +58,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     @Override
     public void onItemClick(int pos) {
         Intent intent = new Intent();
-        intent.setClass(HomeAct.this, clzs[pos]);
+        intent.setClass(ViewMain.this, clzs[pos]);
         startActivity(intent);
     }
 

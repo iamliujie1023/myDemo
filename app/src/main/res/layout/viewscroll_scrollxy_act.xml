@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.liuj.liujdemo.module.view.scroller.MyScrollerTestView
+        android:id="@+id/mview_scroller_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_green_dark">
+
+        <ImageView
+            android:id="@+id/viewscroll_iv_target"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_orange_light"/>
+    </com.example.liuj.liujdemo.module.view.scroller.MyScrollerTestView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/viewscroll_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="move"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" X: "/>
+
+        <EditText
+            android:id="@+id/viewscroll_etx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="-1234567890."
+            android:ems="4"
+            android:lines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Y: "/>
+
+        <EditText
+            android:id="@+id/viewscroll_ety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="-1234567890."
+            android:ems="4"
+            android:lines="1"/>
+
+        <Button
+            android:id="@+id/viewscroll_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="reset"/>
+
+    </LinearLayout>
+</FrameLayout>

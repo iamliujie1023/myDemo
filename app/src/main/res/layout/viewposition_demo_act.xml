@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="
+        view的left、top、right、botton、x、y、TranslationX、TranslationY都是相对于父控件\n
+        并且left、top、right、botton是不可变的\n
+        x、y表示控件相对于父控件左上角的坐标\n
+        TranslationX、TranslationY 是偏移量\n
+        x = left + TranslationX; y = botton + TranslationY"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_light">
+
+        <ImageView
+            android:id="@+id/viewpos_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_green_dark"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/viewpos_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:lines="3"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/viewpos_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="up"/>
+
+        <Button
+            android:id="@+id/viewpos_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="down"/>
+
+        <Button
+            android:id="@+id/viewpos_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="left"/>
+
+        <Button
+            android:id="@+id/viewpos_btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="right"/>
+
+        <Button
+            android:id="@+id/viewpos_btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="reset"/>
+    </LinearLayout>
+
+</FrameLayout>

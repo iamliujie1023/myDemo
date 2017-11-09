@@ -45,6 +45,12 @@
                   android:taskAffinity="liuj.singletask.test"
                   android:launchMode="singleTask"/>
 
+        <activity android:name=".module.view.ViewMain"/>
+
+        <activity android:name=".module.view.position.ViewPositionAct"/>
+
+        <activity android:name=".module.view.scroller.ViewScrollScrollerAct"/>
+
     </application>
 
 </manifest>
