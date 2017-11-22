@@ -51,6 +51,9 @@
 
         <activity android:name=".module.view.scroller.ViewScrollScrollerAct"/>
 
+        <activity android:name=".module.android_base.ActA" />
+        <activity android:name=".module.android_base.ActB" />
+
     </application>
 
 </manifest>
