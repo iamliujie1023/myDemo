@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.liujdemo.R;
+import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
+import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
 import com.example.liuj.liujdemo.module.view.ViewMain;
 
@@ -28,11 +30,16 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
 
     private String[] strs = new String[]{
             ActController.class.getSimpleName(),
-            ViewMain.class.getSimpleName()
+            ViewMain.class.getSimpleName(),
+            HandlerThreadActivity.class.getSimpleName(),
+            MainActivity.class.getSimpleName()
     };
+
     private Class<?>[] clzs = new Class[]{
             ActController.class,
-            ViewMain.class
+            ViewMain.class,
+            HandlerThreadActivity.class,
+            MainActivity.class
     };
 
     @Override

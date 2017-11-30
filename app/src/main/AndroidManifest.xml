@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.liuj.liujdemo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,31 +21,39 @@
 
         <activity android:name=".module.taskaffinity.ActController"/>
 
-        <activity android:name=".module.taskaffinity.singletop.ActA"
+        <activity
+            android:name=".module.taskaffinity.singletop.ActA"
             android:launchMode="singleTop"/>
-        <activity android:name=".module.taskaffinity.singletop.ActB"
+        <activity
+            android:name=".module.taskaffinity.singletop.ActB"
             android:launchMode="singleTop"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActA"
+        <activity
+            android:name=".module.taskaffinity.singletask.ActA"
             android:launchMode="singleTask"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActB"
-                  android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.taskaffinity.singletask.ActB"
+            android:launchMode="singleTask"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActC"
-                  android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.taskaffinity.singletask.ActC"
+            android:launchMode="singleTask"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActX"
-                  android:taskAffinity="liuj.singletask.test"
-                  android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.taskaffinity.singletask.ActX"
+            android:launchMode="singleTask"
+            android:taskAffinity="liuj.singletask.test"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActY"
-                  android:taskAffinity="liuj.singletask.test"
-                  android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.taskaffinity.singletask.ActY"
+            android:launchMode="singleTask"
+            android:taskAffinity="liuj.singletask.test"/>
 
-        <activity android:name=".module.taskaffinity.singletask.ActZ"
-                  android:taskAffinity="liuj.singletask.test"
-                  android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.taskaffinity.singletask.ActZ"
+            android:launchMode="singleTask"
+            android:taskAffinity="liuj.singletask.test"/>
 
         <activity android:name=".module.view.ViewMain"/>
 
@@ -51,6 +61,9 @@
 
         <activity android:name=".module.view.scroller.ViewScrollScrollerAct"/>
 
+        <activity android:name=".module.handlerthread.HandlerThreadActivity"/>
+
+        <activity android:name=".module.dexclassloader.MainActivity"/>
     </application>
 
 </manifest>
