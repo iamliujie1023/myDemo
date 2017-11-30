@@ -1,5 +1,7 @@
 package com.example.j2se.javareflection;
 
+import com.example.j2se.LogUtil;
+
 /**
  * Created by liuj on 2017/11/27.
  */
