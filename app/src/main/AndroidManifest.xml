@@ -64,6 +64,10 @@
         <activity android:name=".module.handlerthread.HandlerThreadActivity"/>
 
         <activity android:name=".module.dexclassloader.MainActivity"/>
+
+        <activity android:name=".module.android_base.ActA" />
+        <activity android:name=".module.android_base.ActB" />
+
     </application>
 
 </manifest>
