@@ -1,10 +1,9 @@
-package com.example.liuj.liujdemo.home;
+package com.example.liuj.liujdemo.module.recyclerview;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,16 +12,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.liujdemo.R;
-import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
-import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
-import com.example.liuj.liujdemo.module.android_base.ActA;
-import com.example.liuj.liujdemo.module.taskaffinity.ActController;
-import com.example.liuj.liujdemo.module.view.ViewMain;
+import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.home.IItemClickCallback;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class HomeAct extends AppCompatActivity implements IItemClickCallback {
+/**
+ * Created by liuj on 2017/12/4.
+ */
+
+public class RvMainAct extends BaseAct implements IItemClickCallback {
 
     @BindView(R.id.main_rl)
     RecyclerView mRecyclerView;
@@ -30,19 +30,11 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     private MyAdapter mAdapter;
 
     private String[] strs = new String[]{
-            ActController.class.getSimpleName(),
-            ViewMain.class.getSimpleName(),
-            HandlerThreadActivity.class.getSimpleName(),
-            MainActivity.class.getSimpleName(),
-            "android base"
+            "rv ItemTouchHelper"
     };
 
     private Class<?>[] clzs = new Class[]{
-            ActController.class,
-            ViewMain.class,
-            HandlerThreadActivity.class,
-            MainActivity.class,
-            ActA.class
+            RvMainAct.class
     };
 
     @Override
@@ -67,11 +59,11 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     @Override
     public void onItemClick(int pos) {
         Intent intent = new Intent();
-        intent.setClass(HomeAct.this, clzs[pos]);
+        intent.setClass(RvMainAct.this, clzs[pos]);
         startActivity(intent);
     }
 
-    static class MyAdapter extends RecyclerView.Adapter {
+    static class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
         private String[] mDatas;
 
@@ -89,13 +81,13 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
         }
 
         @Override
-        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             return MyHolder.obtain(mContext, parent);
         }
 
         @Override
-        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-            ((MyHolder) holder).bindData(position, mDatas[position], mCallback);
+        public void onBindViewHolder(MyHolder holder, int position) {
+            holder.bindData(position, mDatas[position], mCallback);
         }
 
         @Override
@@ -129,4 +121,5 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
         }
 
     }
+
 }
