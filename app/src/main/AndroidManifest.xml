@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.liuj.liujdemo">
+          package="com.example.liuj">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.HomeAct">
+        <activity android:name=".liujdemo.home.HomeAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,54 +19,54 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".module.taskaffinity.ActController"/>
+        <activity android:name=".liujdemo.module.taskaffinity.ActController"/>
 
         <activity
-            android:name=".module.taskaffinity.singletop.ActA"
+            android:name=".liujdemo.module.taskaffinity.singletop.ActA"
             android:launchMode="singleTop"/>
         <activity
-            android:name=".module.taskaffinity.singletop.ActB"
+            android:name=".liujdemo.module.taskaffinity.singletop.ActB"
             android:launchMode="singleTop"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActA"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActA"
             android:launchMode="singleTask"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActB"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActB"
             android:launchMode="singleTask"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActC"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActC"
             android:launchMode="singleTask"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActX"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActX"
             android:launchMode="singleTask"
             android:taskAffinity="liuj.singletask.test"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActY"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActY"
             android:launchMode="singleTask"
             android:taskAffinity="liuj.singletask.test"/>
 
         <activity
-            android:name=".module.taskaffinity.singletask.ActZ"
+            android:name=".liujdemo.module.taskaffinity.singletask.ActZ"
             android:launchMode="singleTask"
             android:taskAffinity="liuj.singletask.test"/>
 
-        <activity android:name=".module.view.ViewMain"/>
+        <activity android:name=".liujdemo.module.view.ViewMain"/>
 
-        <activity android:name=".module.view.position.ViewPositionAct"/>
+        <activity android:name=".liujdemo.module.view.position.ViewPositionAct"/>
 
-        <activity android:name=".module.view.scroller.ViewScrollScrollerAct"/>
+        <activity android:name=".liujdemo.module.view.scroller.ViewScrollScrollerAct"/>
 
-        <activity android:name=".module.handlerthread.HandlerThreadActivity"/>
+        <activity android:name=".liujdemo.module.handlerthread.HandlerThreadActivity"/>
 
-        <activity android:name=".module.dexclassloader.MainActivity"/>
+        <activity android:name=".liujdemo.module.dexclassloader.MainActivity"/>
 
-        <activity android:name=".module.android_base.ActA" />
-        <activity android:name=".module.android_base.ActB" />
+        <activity android:name=".liujdemo.module.android_base.ActA" />
+        <activity android:name=".liujdemo.module.android_base.ActB" />
 
     </application>
 

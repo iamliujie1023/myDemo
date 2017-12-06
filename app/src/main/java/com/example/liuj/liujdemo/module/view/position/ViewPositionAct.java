@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
 
 import butterknife.BindView;

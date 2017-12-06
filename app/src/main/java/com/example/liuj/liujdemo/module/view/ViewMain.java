@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
 import com.example.liuj.liujdemo.module.view.position.ViewPositionAct;
 import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;

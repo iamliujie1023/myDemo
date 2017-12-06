@@ -14,7 +14,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
 
 import butterknife.BindView;

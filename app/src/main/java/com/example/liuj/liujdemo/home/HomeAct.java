@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
 import com.example.liuj.liujdemo.module.android_base.ActA;

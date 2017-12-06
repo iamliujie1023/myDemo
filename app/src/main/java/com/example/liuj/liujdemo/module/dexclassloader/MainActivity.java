@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.example.liuj.liujdemo.base.BaseAct;
-import com.example.liuj.liujdemo.tools.LogUtils;
+import com.example.liuj.sdk.LogUtils;
 
 /**
  * Created by liuj on 2017/11/21.

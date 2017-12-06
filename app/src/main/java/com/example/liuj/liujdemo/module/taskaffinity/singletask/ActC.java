@@ -1,15 +1,14 @@
 package com.example.liuj.liujdemo.module.taskaffinity.singletask;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
-import com.example.liuj.liujdemo.tools.IntentUtil;
+import com.example.liuj.sdk.IntentUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

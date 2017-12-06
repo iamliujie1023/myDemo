@@ -8,9 +8,9 @@ import android.os.HandlerThread;
 import android.os.Message;
 import android.widget.ImageView;
 
-import com.example.liuj.liujdemo.R;
+import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
-import com.example.liuj.liujdemo.tools.LogUtils;
+import com.example.liuj.sdk.LogUtils;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
