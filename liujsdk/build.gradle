@@ -33,7 +33,7 @@ dependencies {
     api "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
     api "com.android.support:support-v4:$rootProject.supportLibraryVersion"
 
-//    compile "com.jakewharton:butterknife:$rootProject.buter_knife_version"
+    compile "com.jakewharton:butterknife:$rootProject.buter_knife_version"
 //    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.buter_knife_version"
 
 }
