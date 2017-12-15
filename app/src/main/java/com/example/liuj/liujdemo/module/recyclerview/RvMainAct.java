@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
+import com.example.liuj.liujdemo.module.recyclerview.overscroll.RvOverScrollAct;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -30,11 +31,13 @@ public class RvMainAct extends BaseAct implements IItemClickCallback {
     private MyAdapter mAdapter;
 
     private String[] strs = new String[]{
-            "rv ItemTouchHelper"
+            "rv ItemTouchHelper",
+            "overSecoll"
     };
 
     private Class<?>[] clzs = new Class[]{
-            RvMainAct.class
+            ItemTouchHelperDemoAct.class,
+            RvOverScrollAct.class
     };
 
     @Override

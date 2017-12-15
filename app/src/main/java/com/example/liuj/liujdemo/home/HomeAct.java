@@ -2,9 +2,9 @@ package com.example.liuj.liujdemo.home;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,9 +13,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
-import com.example.liuj.liujdemo.module.android_base.ActA;
+import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
 import com.example.liuj.liujdemo.module.view.ViewMain;
 
@@ -34,7 +35,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             ViewMain.class.getSimpleName(),
             HandlerThreadActivity.class.getSimpleName(),
             MainActivity.class.getSimpleName(),
-            "android base"
+            "android base",
+            RvMainAct.class.getSimpleName()
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -42,7 +44,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             ViewMain.class,
             HandlerThreadActivity.class,
             MainActivity.class,
-            ActA.class
+            ActA.class,
+            RvMainAct.class
     };
 
     @Override

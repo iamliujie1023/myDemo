@@ -68,6 +68,10 @@
         <activity android:name=".liujdemo.module.android_base.ActA" />
         <activity android:name=".liujdemo.module.android_base.ActB" />
 
+        <activity android:name=".liujdemo.module.recyclerview.RvMainAct"/>
+        <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
+        <activity android:name=".liujdemo.module.recyclerview.overscroll.RvOverScrollAct"/>
+
     </application>
 
 </manifest>
