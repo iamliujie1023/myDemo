@@ -1,1 +1,1 @@
-include ':app', ':j2se', ':myrouter_annotation', ':myrouter_complie', ':liujsdk', ':fileutil'
+include ':app', ':j2se', ':liujsdk', ':fileutil'
