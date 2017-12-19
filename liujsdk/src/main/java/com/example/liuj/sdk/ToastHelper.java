@@ -13,6 +13,10 @@ public class ToastHelper {
         Toast.makeText(context, strMsg, Toast.LENGTH_SHORT);
     }
 
+    public static final void toastLong(Context context, String strMsg) {
+        Toast.makeText(context, strMsg, Toast.LENGTH_SHORT);
+    }
+
 //    public static final void toast(String strMsg) {
 //        toast(MyApplication.getInstance(), strMsg);
 //    }

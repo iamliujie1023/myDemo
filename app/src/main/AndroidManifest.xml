@@ -72,6 +72,8 @@
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
         <activity android:name=".liujdemo.module.recyclerview.overscroll.RvOverScrollAct"/>
 
+        <activity android:name=".liujdemo.module.jump_other_app_act.MainAct"/>
+
     </application>
 
 </manifest>

@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
     <com.example.liuj.liujdemo.module.recyclerview.overscroll.MyView
         android:layout_marginTop="100dp"
         android:id="@+id/rv2"

@@ -1,15 +1,11 @@
 package com.example.liuj.liujdemo.module.recyclerview.overscroll;
 
-import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
 import com.example.liuj.R;
@@ -17,7 +13,6 @@ import com.example.liuj.liujdemo.base.BaseAct;
 import com.example.liuj.liujdemo.holder.NormalHolder;
 import com.example.liuj.liujdemo.model.NormalModel;
 import com.example.liuj.liujdemo.tools.ListDataUtil;
-import com.example.liuj.sdk.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,14 +43,7 @@ public class RvOverScrollAct extends BaseAct {
         setContentView(R.layout.rv_overscroll_act);
         ButterKnife.bind(this);
 
-        mTransX = (int) mRecyclerView.getTranslationX();
-        mTouchSlop = ViewConfiguration.get(this).getScaledTouchSlop();
-        mRecyclerView.setOnTouchListener(mOnTouchListener);
-
         initView();
-
-        LogUtils.i("mTouchSlop=" + mTouchSlop);
-        LogUtils.i("adapter Count =" + mRecyclerView.getAdapter().getItemCount());
     }
 
     private void initView() {
@@ -67,6 +55,7 @@ public class RvOverScrollAct extends BaseAct {
 
         mRecyclerView.setAdapter(myAdapter);
         mRecyclerView.setLayoutManager(linearLayoutManager);
+        RvHorOverScrollHelper.attach(mRecyclerView);
 
 
         MyAdapter myAdapter2 = new MyAdapter(this);
@@ -78,77 +67,6 @@ public class RvOverScrollAct extends BaseAct {
         myAdapter3.reset(ListDataUtil.getDemoColors());
         mMyView2.setAdapter(myAdapter3);
     }
-
-    int mTouchSlop;
-    int mTransX;
-    float unCanScrollX = 0;
-//    float mDire;// >0 forward <0 backwards
-
-    float mLastX;
-    private View.OnTouchListener mOnTouchListener = new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                mLastX = event.getX();
-            } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                unCanScrollX = 0;
-                mLastX = 0;
-
-                float curTranX = v.getTranslationX();
-
-                ObjectAnimator animatorTranslateX = ObjectAnimator.ofFloat(v, "translationX", curTranX, mTransX);
-                animatorTranslateX.start();
-                return false;
-            } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
-
-                if (mLastX == 0) {
-                    mLastX = event.getX();
-                    return false;
-                }
-
-                float dire = event.getX() - mLastX; // >0 forward <0 backwards
-                int diff = (int) Math.abs(dire);
-//                Log.i("liujie", "diff= " + diff + ", lastX = " + (int) mLastX + ", curX=" + (int) event.getX());
-
-                boolean isFirstPosVisible = linearLayoutManager.findFirstCompletelyVisibleItemPosition() == 0;
-                boolean isLastPosVisible = linearLayoutManager.findLastCompletelyVisibleItemPosition() == ((RecyclerView) v).getAdapter().getItemCount() - 1;
-
-                LogUtils.i("!(-1) = " + !v.canScrollHorizontally(-1));
-                LogUtils.i("!(1) = " + !v.canScrollHorizontally(1));
-
-
-                if (dire > 0 && !v.canScrollHorizontally(-1)
-                        && isFirstPosVisible) {
-
-                    v.setTranslationX(v.getTranslationX() + diff / 2);
-                    mLastX = event.getX();
-                    return true;
-                } else if (dire < 0 && !v.canScrollHorizontally(1)
-                        && isLastPosVisible) {
-
-                    v.setTranslationX(v.getTranslationX() - diff / 2);
-                    mLastX = event.getX();
-                    return true;
-                } else if (dire < 0 && isFirstPosVisible && (int) v.getTranslationX() != mTransX) {
-
-                    v.setTranslationX(v.getTranslationX() - diff / 2);
-                    mLastX = event.getX();
-                    return true;
-                }
-
-                mLastX = event.getX();
-                return false;
-            }
-
-            return false;
-        }
-    };
-
-    public boolean inteceptMove(MotionEvent event) {
-
-        return true;
-    }
-
 
     private static class MyAdapter extends RecyclerView.Adapter<NormalHolder> {
 

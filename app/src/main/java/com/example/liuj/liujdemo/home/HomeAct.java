@@ -16,6 +16,7 @@ import com.example.liuj.R;
 import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
+import com.example.liuj.liujdemo.module.jump_other_app_act.MainAct;
 import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
 import com.example.liuj.liujdemo.module.view.ViewMain;
@@ -36,7 +37,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class.getSimpleName(),
             MainActivity.class.getSimpleName(),
             "android base",
-            RvMainAct.class.getSimpleName()
+            RvMainAct.class.getSimpleName(),
+            "跳转到其他App"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -45,7 +47,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class,
             MainActivity.class,
             ActA.class,
-            RvMainAct.class
+            RvMainAct.class,
+            com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class
     };
 
     @Override
