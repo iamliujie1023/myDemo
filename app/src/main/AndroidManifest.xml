@@ -74,6 +74,10 @@
 
         <activity android:name=".liujdemo.module.jump_other_app_act.MainAct"/>
 
+        <activity android:name=".liujdemo.module.jobscheduler.MainAct"/>
+        <service android:name=".liujdemo.module.jobscheduler.MyJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE" />
+
     </application>
 
 </manifest>

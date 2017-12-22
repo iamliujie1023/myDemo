@@ -10,11 +10,11 @@ import android.widget.Toast;
 public class ToastHelper {
 
     public static final void toast(Context context, String strMsg) {
-        Toast.makeText(context, strMsg, Toast.LENGTH_SHORT);
+        Toast.makeText(context, strMsg, Toast.LENGTH_SHORT).show();
     }
 
     public static final void toastLong(Context context, String strMsg) {
-        Toast.makeText(context, strMsg, Toast.LENGTH_SHORT);
+        Toast.makeText(context, strMsg, Toast.LENGTH_SHORT).show();
     }
 
 //    public static final void toast(String strMsg) {
