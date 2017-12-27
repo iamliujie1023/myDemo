@@ -23,7 +23,7 @@
 
         <activity
             android:name=".liujdemo.module.taskaffinity.singletop.ActA"
-            android:launchMode="singleTop"/>
+            android:launchMode=""/>
         <activity
             android:name=".liujdemo.module.taskaffinity.singletop.ActB"
             android:launchMode="singleTop"/>
@@ -72,7 +72,19 @@
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
         <activity android:name=".liujdemo.module.recyclerview.overscroll.RvOverScrollAct"/>
 
-        <activity android:name=".liujdemo.module.jump_other_app_act.MainAct"/>
+        <activity android:name=".liujdemo.module.jump_other_app_act.MainAct">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!--<data-->
+                    <!--android:scheme="liujie"-->
+                    <!--android:host="liuj.host.test"-->
+                    <!--android:port="80"-->
+                    <!--android:pathPrefix="/openwith"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".liujdemo.module.jump_other_app_act.DemoWebView"/>
 
         <activity android:name=".liujdemo.module.jobscheduler.MainAct"/>
         <service android:name=".liujdemo.module.jobscheduler.MyJobService"

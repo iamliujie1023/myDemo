@@ -25,4 +25,18 @@
         android:layout_height="wrap_content"
         android:text="跳转到另一个App 指定Act"/>
 
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过内部浏览器跳转到指定APP"/>
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过浏览器跳转到指定APP"/>
+
 </LinearLayout>

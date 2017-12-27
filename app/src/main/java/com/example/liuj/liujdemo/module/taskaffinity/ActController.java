@@ -1,5 +1,7 @@
 package com.example.liuj.liujdemo.module.taskaffinity;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.widget.TextView;
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
 import com.example.liuj.sdk.IntentUtil;
+import com.example.liuj.sdk.ToastHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -23,6 +26,9 @@ public class ActController extends BaseAct {
 
     @BindView(R.id.taskaffinity_tv2)
     TextView mTv2;
+
+    @BindView(R.id.taskaffinity_tv3)
+    TextView mTv3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,6 +51,20 @@ public class ActController extends BaseAct {
             }
         });
 
+        mTv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent();
+                    ComponentName componentName = new ComponentName("com.example.liuj.router", "com.example.liuj.router.ActX");
+                    intent.setComponent(componentName);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    ToastHelper.toastLong(ActController.this, e.toString());
+                }
+            }
+        });
 
     }
 
