@@ -302,7 +302,7 @@ public class MainAct extends BaseAct {
 
         @Override
         public StatusHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return StatusHolder.newInstance(mContext, parent);
+            return StatusHolder.newInstance(parent, mContext);
         }
 
         @Override

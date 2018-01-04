@@ -13,26 +13,26 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by liuj on 2017/12/29.
+ * Created by liuj on 2017/12/13.
  */
 
-public class NormalHolder extends BaseHolder<NormalModel> {
+public class MyRvOverScrollHolder extends BaseHolder<NormalModel> {
 
     @BindView(R.id.tv_text)
-    TextView mTvTest;
+    TextView mTextView;
 
-    public static NormalHolder newInstance(ViewGroup parent, Context context) {
-        return new NormalHolder(LayoutInflater.from(context).inflate(R.layout.rv_item_normal_layout, parent, false));
+    public static MyRvOverScrollHolder newInstance(Context context, ViewGroup viewGroup) {
+        return new MyRvOverScrollHolder(LayoutInflater.from(context).inflate(R.layout.rv_item_normal_layout, viewGroup, false));
     }
 
-    public NormalHolder(View itemView) {
+    public MyRvOverScrollHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
     }
 
     @Override
     public void bindData(NormalModel normalModel) {
-        mTvTest.setText("def");
+        mTextView.setText(normalModel.text);
     }
 
 }

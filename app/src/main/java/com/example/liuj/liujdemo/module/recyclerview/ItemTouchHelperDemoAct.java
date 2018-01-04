@@ -1,7 +1,6 @@
 package com.example.liuj.liujdemo.module.recyclerview;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
-import com.example.liuj.liujdemo.holder.NormalHolder;
+import com.example.liuj.liujdemo.holder.MyRvOverScrollHolder;
 import com.example.liuj.liujdemo.model.NormalModel;
 import com.example.liuj.liujdemo.tools.ListDataUtil;
 import com.example.liuj.liujdemo.view.HorItemDecoration;
@@ -123,7 +122,7 @@ public class ItemTouchHelperDemoAct extends BaseAct {
 
 
 
-    private static class MyAdapter extends RecyclerView.Adapter<NormalHolder>  {
+    private static class MyAdapter extends RecyclerView.Adapter<MyRvOverScrollHolder>  {
 
         private List<NormalModel> mData;
         private Context mContext;
@@ -139,12 +138,12 @@ public class ItemTouchHelperDemoAct extends BaseAct {
         }
 
         @Override
-        public NormalHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return NormalHolder.newInstance(mContext, parent);
+        public MyRvOverScrollHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            return MyRvOverScrollHolder.newInstance(mContext, parent);
         }
 
         @Override
-        public void onBindViewHolder(NormalHolder holder, int position) {
+        public void onBindViewHolder(MyRvOverScrollHolder holder, int position) {
             NormalModel model = mData.get(position);
             holder.bindData(model);
         }

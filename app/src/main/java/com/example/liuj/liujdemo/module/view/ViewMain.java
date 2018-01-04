@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.base.BaseAct;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
 import com.example.liuj.liujdemo.module.view.position.ViewPositionAct;
 import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
@@ -20,7 +20,7 @@ import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ViewMain extends AppCompatActivity implements IItemClickCallback {
+public class ViewMain extends BaseAct implements IItemClickCallback {
 
     @BindView(R.id.main_rl)
     RecyclerView mRecyclerView;

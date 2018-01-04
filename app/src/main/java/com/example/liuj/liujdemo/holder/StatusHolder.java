@@ -25,7 +25,7 @@ public class StatusHolder extends BaseHolder<StatusModel> {
     int colorStart;
     int colorStop;
 
-    public static StatusHolder newInstance(Context context, ViewGroup viewGroup) {
+    public static StatusHolder newInstance(ViewGroup viewGroup, Context context) {
         return new StatusHolder(LayoutInflater.from(context).inflate(R.layout.rv_item_status_layout, viewGroup, false), context);
     }
 

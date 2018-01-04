@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseAct;
-import com.example.liuj.liujdemo.holder.NormalHolder;
+import com.example.liuj.liujdemo.holder.MyRvOverScrollHolder;
 import com.example.liuj.liujdemo.model.NormalModel;
 import com.example.liuj.liujdemo.tools.ListDataUtil;
 
@@ -68,7 +68,7 @@ public class RvOverScrollAct extends BaseAct {
         mMyView2.setAdapter(myAdapter3);
     }
 
-    private static class MyAdapter extends RecyclerView.Adapter<NormalHolder> {
+    private static class MyAdapter extends RecyclerView.Adapter<MyRvOverScrollHolder> {
 
         private List<NormalModel> mData;
         private Context mContext;
@@ -84,12 +84,12 @@ public class RvOverScrollAct extends BaseAct {
         }
 
         @Override
-        public NormalHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return NormalHolder.newInstance(mContext, parent);
+        public MyRvOverScrollHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            return MyRvOverScrollHolder.newInstance(mContext, parent);
         }
 
         @Override
-        public void onBindViewHolder(NormalHolder holder, int position) {
+        public void onBindViewHolder(MyRvOverScrollHolder holder, int position) {
             NormalModel model = mData.get(position);
             holder.bindData(model);
         }

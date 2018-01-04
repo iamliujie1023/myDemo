@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.module.android_base.ActA;
+import com.example.liuj.liujdemo.module.customview.Main;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
 import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
@@ -38,7 +39,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "android base",
             RvMainAct.class.getSimpleName(),
             "跳转到其他App",
-            "JobScheduler"
+            "JobScheduler",
+            "customView"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -49,7 +51,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             ActA.class,
             RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,
-            com.example.liuj.liujdemo.module.jobscheduler.MainAct.class
+            com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,
+            Main.class
     };
 
     @Override

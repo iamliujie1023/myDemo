@@ -22,8 +22,7 @@
         <activity android:name=".liujdemo.module.taskaffinity.ActController"/>
 
         <activity
-            android:name=".liujdemo.module.taskaffinity.singletop.ActA"
-            android:launchMode=""/>
+            android:name=".liujdemo.module.taskaffinity.singletop.ActA"/>
         <activity
             android:name=".liujdemo.module.taskaffinity.singletop.ActB"
             android:launchMode="singleTop"/>
@@ -68,7 +67,7 @@
         <activity android:name=".liujdemo.module.android_base.ActA" />
         <activity android:name=".liujdemo.module.android_base.ActB" />
 
-        <activity android:name=".liujdemo.module.recyclerview.RvMainAct"/>
+        <activity android:name=".liujdemo.module.recyclerview.RvMainAct" />
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
         <activity android:name=".liujdemo.module.recyclerview.overscroll.RvOverScrollAct"/>
 
@@ -89,6 +88,9 @@
         <activity android:name=".liujdemo.module.jobscheduler.MainAct"/>
         <service android:name=".liujdemo.module.jobscheduler.MyJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".liujdemo.module.customview.Main"/>
+        <activity android:name=".liujdemo.module.customview.Demo1_12"/>
 
     </application>
 
