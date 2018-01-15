@@ -9,7 +9,7 @@ import android.os.Message;
 import android.widget.ImageView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.sdk.LogUtils;
 
 import java.io.BufferedInputStream;
@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/11/16.
  */
-public class HandlerThreadActivity extends BaseAct {
+public class HandlerThreadActivity extends BaseActivity {
     /**
      * 图片地址集合
      */

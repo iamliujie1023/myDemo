@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.adapter.MutiTypeAdapter;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.model.ModelMapAatModel;
 import com.example.liuj.liujdemo.model.BaseModel;
 
@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/29.
  */
-public class Main extends BaseAct {
+public class Main extends BaseActivity {
 
     MutiTypeAdapter mAdapter;
 

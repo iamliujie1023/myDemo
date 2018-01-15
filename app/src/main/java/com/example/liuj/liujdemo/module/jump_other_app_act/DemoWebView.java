@@ -7,7 +7,7 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/27.
  */
-public class DemoWebView extends BaseAct {
+public class DemoWebView extends BaseActivity {
 
     @BindView(R.id.webview)
     WebView mWebView;

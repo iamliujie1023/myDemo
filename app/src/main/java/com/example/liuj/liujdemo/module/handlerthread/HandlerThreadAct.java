@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.sdk.LogUtils;
 
 import java.util.Random;
@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2018/1/14.
  */
-public class HandlerThreadAct extends BaseAct {
+public class HandlerThreadAct extends BaseActivity {
 
     HandlerThread mHandlerThread;
 

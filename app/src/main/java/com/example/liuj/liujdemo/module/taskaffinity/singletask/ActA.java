@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.sdk.IntentUtil;
 
 import butterknife.BindView;
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
  * Created by liuj on 2017/11/6.
  */
 
-public class ActA extends BaseAct {
+public class ActA extends BaseActivity {
 
     @BindView(R.id.singletop_tv1)
     TextView mTvGoToB;

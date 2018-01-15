@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by liuj on 2017/11/6.
  */
-public class BaseAct extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity {
 
     protected String PAGE_TAG;
 

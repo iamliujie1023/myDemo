@@ -1,4 +1,4 @@
-package com.example.liuj.liujdemo.module.IntentService;
+package com.example.liuj.liujdemo.module.service.IntentService;
 
 import android.app.IntentService;
 import android.content.Context;

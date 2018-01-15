@@ -9,7 +9,7 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.ViewGroup;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.holder.MyRvOverScrollHolder;
 import com.example.liuj.liujdemo.model.NormalModel;
 import com.example.liuj.liujdemo.tools.ListDataUtil;
@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/4.
  */
-public class ItemTouchHelperDemoAct extends BaseAct {
+public class ItemTouchHelperDemoAct extends BaseActivity {
 
     @BindView(R.id.rv)
     RecyclerView mRecyclerView;

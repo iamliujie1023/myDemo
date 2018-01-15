@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/11/9.
  */
-public class ViewScrollScrollerAct extends BaseAct implements View.OnClickListener, MyScrollerTestView.ICallback{
+public class ViewScrollScrollerAct extends BaseActivity implements View.OnClickListener, MyScrollerTestView.ICallback{
 
     @BindView(R.id.mview_scroller_text_view)
     MyScrollerTestView mMyScrollerTestView;

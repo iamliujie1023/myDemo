@@ -6,7 +6,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
  * Created by liuj on 2017/11/22.
  */
 
-public class ActB extends BaseAct{
+public class ActB extends BaseActivity {
 
     private static final String TAG = ActB.class.getSimpleName();
 

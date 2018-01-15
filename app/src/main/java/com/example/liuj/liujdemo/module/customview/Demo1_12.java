@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.module.customview.view.View1;
 
 import butterknife.BindView;
@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/29.
  */
-public class Demo1_12 extends BaseAct {
+public class Demo1_12 extends BaseActivity {
 
     @BindView(R.id.view1)
     View1 mView1;

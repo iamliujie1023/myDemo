@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.module.IntentService.IntentServiceAct;
+import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
 import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.asynctask.Act;
 import com.example.liuj.liujdemo.module.customview.Main;
@@ -21,6 +21,7 @@ import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadAct;
 import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
+import com.example.liuj.liujdemo.module.service.MainAct;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
 import com.example.liuj.liujdemo.module.view.ViewMain;
 
@@ -46,7 +47,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "JobScheduler",
             "customView",
             "AsyncTask",
-            "IntentService"
+            "IntentService",
+            "Service",
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -61,7 +63,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,
             Main.class,
             Act.class,
-            IntentServiceAct.class
+            IntentServiceAct.class,
+            MainAct.class,
     };
 
     @Override

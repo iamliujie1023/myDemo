@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
 import com.example.liuj.liujdemo.module.recyclerview.overscroll.RvOverScrollAct;
 
@@ -23,7 +23,7 @@ import butterknife.ButterKnife;
  * Created by liuj on 2017/12/4.
  */
 
-public class RvMainAct extends BaseAct implements IItemClickCallback {
+public class RvMainAct extends BaseActivity implements IItemClickCallback {
 
     @BindView(R.id.main_rl)
     RecyclerView mRecyclerView;

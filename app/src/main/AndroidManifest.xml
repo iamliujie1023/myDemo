@@ -64,38 +64,62 @@
 
         <activity android:name=".liujdemo.module.dexclassloader.MainActivity"/>
 
-        <activity android:name=".liujdemo.module.android_base.ActA" />
-        <activity android:name=".liujdemo.module.android_base.ActB" />
+        <activity android:name=".liujdemo.module.android_base.ActA"/>
+        <activity android:name=".liujdemo.module.android_base.ActB"/>
 
-        <activity android:name=".liujdemo.module.recyclerview.RvMainAct" />
+        <activity android:name=".liujdemo.module.recyclerview.RvMainAct"/>
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
         <activity android:name=".liujdemo.module.recyclerview.overscroll.RvOverScrollAct"/>
 
         <activity android:name=".liujdemo.module.jump_other_app_act.MainAct">
             <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.VIEW"/>-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-                <!--<category android:name="android.intent.category.BROWSABLE" />-->
-                <!--<data-->
-                    <!--android:scheme="liujie"-->
-                    <!--android:host="liuj.host.test"-->
-                    <!--android:port="80"-->
-                    <!--android:pathPrefix="/openwith"/>-->
+            <!--<action android:name="android.intent.action.VIEW"/>-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<category android:name="android.intent.category.BROWSABLE" />-->
+            <!--<data-->
+            <!--android:scheme="liujie"-->
+            <!--android:host="liuj.host.test"-->
+            <!--android:port="80"-->
+            <!--android:pathPrefix="/openwith"/>-->
             <!--</intent-filter>-->
         </activity>
         <activity android:name=".liujdemo.module.jump_other_app_act.DemoWebView"/>
 
         <activity android:name=".liujdemo.module.jobscheduler.MainAct"/>
-        <service android:name=".liujdemo.module.jobscheduler.MyJobService"
-                 android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".liujdemo.module.jobscheduler.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
 
         <activity android:name=".liujdemo.module.customview.Main"/>
         <activity android:name=".liujdemo.module.customview.Demo1_12"/>
-        <activity android:name=".liujdemo.module.asynctask.Act" />
-        <activity android:name=".liujdemo.module.handlerthread.HandlerThreadAct" />
+        <activity android:name=".liujdemo.module.asynctask.Act"/>
+        <activity android:name=".liujdemo.module.handlerthread.HandlerThreadAct"/>
 
-        <activity android:name=".liujdemo.module.IntentService.IntentServiceAct" />
-        <service android:name=".liujdemo.module.IntentService.DemoIntentService"/>
+        <activity android:name=".liujdemo.module.service.IntentService.IntentServiceAct"/>
+
+        <service android:name=".liujdemo.module.service.IntentService.DemoIntentService"/>
+
+        <activity android:name=".liujdemo.module.service.MainAct"/>
+
+        <activity android:name=".liujdemo.module.service.DemoAct"/>
+
+        <activity android:name=".liujdemo.module.service.process_binderpool.BinderPoolAct"/>
+
+        <service android:name=".liujdemo.module.service.MyService"/>
+
+        <activity android:name=".liujdemo.module.service.process.MainProcessActivity"/>
+
+        <service
+            android:name=".liujdemo.module.service.process.MyProcessService"
+            android:process=":aidl_demo">
+            <intent-filter>
+                <action android:name="com.liuj.process_service" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".liujdemo.module.service.process_binderpool.BinderPoolService"
+            android:process=":binderpool"/>
 
     </application>
 

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.sdk.IntentUtil;
 import com.example.liuj.sdk.ToastHelper;
 
@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/19.
  */
-public class MainAct extends BaseAct implements View.OnClickListener {
+public class MainAct extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.button1)
     Button mButton1;

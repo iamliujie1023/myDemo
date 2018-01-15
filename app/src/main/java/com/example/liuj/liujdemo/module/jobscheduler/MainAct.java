@@ -26,7 +26,7 @@ import android.widget.Toast;
 
 import com.example.liuj.BuildConfig;
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.holder.StatusHolder;
 import com.example.liuj.liujdemo.model.StatusModel;
 import com.example.liuj.sdk.LogUtils;
@@ -41,7 +41,7 @@ import butterknife.ButterKnife;
 /**
  * Created by liuj on 2017/12/20.
  */
-public class MainAct extends BaseAct {
+public class MainAct extends BaseActivity {
 
     public static final int MSG_UNCOLOR_START = 0;
     public static final int MSG_UNCOLOR_STOP = 1;

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
  * Created by liuj on 2017/11/9.
  */
 
-public class ViewPositionAct extends BaseAct {
+public class ViewPositionAct extends BaseActivity {
 
     @BindView(R.id.viewpos_tv)
     TextView mTvDisplay;

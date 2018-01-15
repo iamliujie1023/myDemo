@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.tools.TimeUtils;
 import com.example.liuj.sdk.LogUtils;
 
@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
  * Created by liuj on 2018/1/13.
  */
 
-public class Act extends BaseAct implements View.OnClickListener{
+public class Act extends BaseActivity implements View.OnClickListener{
 
     @BindView(R.id.tv_1)
     TextView mTv1;

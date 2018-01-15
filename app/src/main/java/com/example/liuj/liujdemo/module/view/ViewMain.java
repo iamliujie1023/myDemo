@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
-import com.example.liuj.liujdemo.base.BaseAct;
+import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
 import com.example.liuj.liujdemo.module.view.position.ViewPositionAct;
 import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
@@ -20,7 +20,7 @@ import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ViewMain extends BaseAct implements IItemClickCallback {
+public class ViewMain extends BaseActivity implements IItemClickCallback {
 
     @BindView(R.id.main_rl)
     RecyclerView mRecyclerView;
