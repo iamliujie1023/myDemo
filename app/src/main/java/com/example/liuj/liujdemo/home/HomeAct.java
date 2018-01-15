@@ -13,10 +13,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.module.IntentService.IntentServiceAct;
 import com.example.liuj.liujdemo.module.android_base.ActA;
+import com.example.liuj.liujdemo.module.asynctask.Act;
 import com.example.liuj.liujdemo.module.customview.Main;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
 import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadActivity;
+import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadAct;
 import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
 import com.example.liuj.liujdemo.module.view.ViewMain;
@@ -35,24 +38,30 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             ActController.class.getSimpleName(),
             ViewMain.class.getSimpleName(),
             HandlerThreadActivity.class.getSimpleName(),
+            "handlerThreadDemo2",
             MainActivity.class.getSimpleName(),
             "android base",
             RvMainAct.class.getSimpleName(),
             "跳转到其他App",
             "JobScheduler",
-            "customView"
+            "customView",
+            "AsyncTask",
+            "IntentService"
     };
 
     private Class<?>[] clzs = new Class[]{
             ActController.class,
             ViewMain.class,
             HandlerThreadActivity.class,
+            HandlerThreadAct.class,
             MainActivity.class,
             ActA.class,
             RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,
             com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,
-            Main.class
+            Main.class,
+            Act.class,
+            IntentServiceAct.class
     };
 
     @Override

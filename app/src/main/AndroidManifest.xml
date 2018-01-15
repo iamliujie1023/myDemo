@@ -91,6 +91,11 @@
 
         <activity android:name=".liujdemo.module.customview.Main"/>
         <activity android:name=".liujdemo.module.customview.Demo1_12"/>
+        <activity android:name=".liujdemo.module.asynctask.Act" />
+        <activity android:name=".liujdemo.module.handlerthread.HandlerThreadAct" />
+
+        <activity android:name=".liujdemo.module.IntentService.IntentServiceAct" />
+        <service android:name=".liujdemo.module.IntentService.DemoIntentService"/>
 
     </application>
 
