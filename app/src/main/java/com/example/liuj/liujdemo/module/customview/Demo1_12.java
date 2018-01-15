@@ -25,6 +25,8 @@ public class Demo1_12 extends BaseAct {
         ButterKnife.bind(this);
 
         new Thread(mView1).start();
+
+        Thread thread = new Thread();
     }
 
 }
