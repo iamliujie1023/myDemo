@@ -23,14 +23,6 @@ public class DemoIntentService extends IntentService {
         context.startService(intent);
     }
 
-//    public static void startService(Context context, String path) {
-//        Intent intent = new Intent(context, DemoIntentService.class);
-//        intent.setAction(ACTION);
-//        intent.putExtra(EXTRA_IMG_PATH, path);
-//        context.startService(intent);
-//    }
-
-
     /**
      * Creates an IntentService.  Invoked by your subclass's constructor.
      *
@@ -73,9 +65,6 @@ public class DemoIntentService extends IntentService {
         super.onDestroy();
         LogUtils.i("intentService onDestroy ");
     }
-
-
-
 
 
     @Override

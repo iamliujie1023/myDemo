@@ -32,6 +32,7 @@ public class IntentServiceAct extends BaseActivity {
             public void onClick(View v) {
                 DemoIntentService.startService(IntentServiceAct.this, "tag_1");
                 DemoIntentService.startService(IntentServiceAct.this, "tag_2");
+                DemoIntentService.startService(IntentServiceAct.this, "tag_3");
 
             }
         });

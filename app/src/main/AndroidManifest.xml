@@ -121,6 +121,10 @@
         <service android:name=".liujdemo.module.service.process_binderpool.BinderPoolService"
             android:process=":binderpool"/>
 
+        <activity android:name=".liujdemo.module.bitmap.MainAct"/>
+        <activity android:name=".liujdemo.module.bitmap.region_decoder.RegionDecoderAct"/>
+        <activity android:name=".liujdemo.module.bitmap.region_decoder.LargeImageViewSimpleBakAct"/>
+        
     </application>
 
 </manifest>

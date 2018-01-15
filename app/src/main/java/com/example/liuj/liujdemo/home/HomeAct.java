@@ -48,7 +48,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "customView",
             "AsyncTask",
             "IntentService",
-            "Service",
+            "Service 组建间通讯",
+            "bitmap"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -65,6 +66,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             Act.class,
             IntentServiceAct.class,
             MainAct.class,
+            com.example.liuj.liujdemo.module.bitmap.MainAct.class
     };
 
     @Override

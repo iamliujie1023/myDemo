@@ -1,5 +1,6 @@
 package com.example.liuj.liujdemo.module.handlerthread;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -38,6 +39,7 @@ public class HandlerThreadActivity extends BaseActivity {
     };
     @BindView(R.id.image)
     ImageView imageView;
+    @SuppressLint("HandlerLeak")
     private Handler mUIHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -58,17 +60,17 @@ public class HandlerThreadActivity extends BaseActivity {
         //必须先开启线程
         handlerThread.start();
         //子线程Handler
-        Handler childHandler = new Handler(handlerThread.getLooper(), new ChildCallback());
+        Handler workHandler = new Handler(handlerThread.getLooper(), new workHandlerCallback());
         for (int i = 0; i < 7; i++) {
             //每个1秒去更新图片
-            childHandler.sendEmptyMessageDelayed(i, 1000 * i);
+            workHandler.sendEmptyMessageDelayed(i, 1000 * i);
         }
     }
 
     /**
      * 该callback运行于子线程
      */
-    class ChildCallback implements Handler.Callback {
+    class workHandlerCallback implements Handler.Callback {
         @Override
         public boolean handleMessage(Message msg) {
             //在子线程中进行网络请求
