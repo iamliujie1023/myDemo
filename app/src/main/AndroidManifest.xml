@@ -124,7 +124,9 @@
         <activity android:name=".liujdemo.module.bitmap.MainAct"/>
         <activity android:name=".liujdemo.module.bitmap.region_decoder.RegionDecoderAct"/>
         <activity android:name=".liujdemo.module.bitmap.region_decoder.LargeImageViewSimpleBakAct"/>
-        
+
+        <activity android:name=".liujdemo.module.android_design.AndroidDesignAct"/>
+
     </application>
 
 </manifest>

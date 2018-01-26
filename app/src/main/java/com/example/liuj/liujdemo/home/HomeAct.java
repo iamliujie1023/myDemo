@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.module.android_design.AndroidDesignAct;
 import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
 import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.asynctask.Act;
@@ -49,7 +50,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "AsyncTask",
             "IntentService",
             "Service 组建间通讯",
-            "bitmap"
+            "bitmap",
+            "AndroidDesignAct"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -66,7 +68,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             Act.class,
             IntentServiceAct.class,
             MainAct.class,
-            com.example.liuj.liujdemo.module.bitmap.MainAct.class
+            com.example.liuj.liujdemo.module.bitmap.MainAct.class,
+            AndroidDesignAct.class
     };
 
     @Override
