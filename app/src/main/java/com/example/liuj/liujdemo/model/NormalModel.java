@@ -13,6 +13,6 @@ public class NormalModel extends BaseModel{
         this.text = text;
     }
 
-    public String text;
+    public String text = "def";
 
 }

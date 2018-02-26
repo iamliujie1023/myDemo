@@ -51,7 +51,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "IntentService",
             "Service 组建间通讯",
             "bitmap",
-            "AndroidDesignAct"
+            "AndroidDesignAct",
+            "滑动冲突 NestedScrolling"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -69,7 +70,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             IntentServiceAct.class,
             MainAct.class,
             com.example.liuj.liujdemo.module.bitmap.MainAct.class,
-            AndroidDesignAct.class
+            AndroidDesignAct.class,
+            com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class
     };
 
     @Override

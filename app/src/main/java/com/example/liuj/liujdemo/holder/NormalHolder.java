@@ -32,7 +32,7 @@ public class NormalHolder extends BaseHolder<NormalModel> {
 
     @Override
     public void bindData(NormalModel normalModel) {
-        mTvTest.setText("def");
+        mTvTest.setText(normalModel.text);
     }
 
 }

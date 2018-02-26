@@ -127,6 +127,10 @@
 
         <activity android:name=".liujdemo.module.android_design.AndroidDesignAct"/>
 
+        <activity android:name=".liujdemo.module.NestedScrolling.MainAct"/>
+        <activity android:name=".liujdemo.module.NestedScrolling.nestedscrollingparent.MainActivity"/>
+        <activity android:name=".liujdemo.module.NestedScrolling.old.MainActivity"/>
+
     </application>
 
 </manifest>
