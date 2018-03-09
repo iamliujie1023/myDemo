@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".liujdemo.home.MyApplication">
         <activity android:name=".liujdemo.home.HomeAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -64,8 +65,11 @@
 
         <activity android:name=".liujdemo.module.dexclassloader.MainActivity"/>
 
-        <activity android:name=".liujdemo.module.android_base.ActA"/>
+        <activity android:name=".liujdemo.module.android_base.MainAct"/>
+        <activity android:name=".liujdemo.module.android_base.NormallCaseActA"/>
         <activity android:name=".liujdemo.module.android_base.ActB"/>
+        <activity android:name=".liujdemo.module.android_base.ConfigChangeCaseAct"/>
+        <activity android:name=".liujdemo.module.android_base.ExceptionCaseAct"/>
 
         <activity android:name=".liujdemo.module.recyclerview.RvMainAct"/>
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
@@ -130,6 +134,7 @@
         <activity android:name=".liujdemo.module.NestedScrolling.MainAct"/>
         <activity android:name=".liujdemo.module.NestedScrolling.nestedscrollingparent.MainActivity"/>
         <activity android:name=".liujdemo.module.NestedScrolling.old.MainActivity"/>
+
 
     </application>
 

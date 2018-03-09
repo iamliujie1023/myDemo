@@ -13,9 +13,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.module.android_base.NormallCaseActA;
 import com.example.liuj.liujdemo.module.android_design.AndroidDesignAct;
 import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
-import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.asynctask.Act;
 import com.example.liuj.liujdemo.module.customview.Main;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
@@ -42,7 +42,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class.getSimpleName(),
             "handlerThreadDemo2",
             MainActivity.class.getSimpleName(),
-            "android base",
+            "android 生命周期",
             RvMainAct.class.getSimpleName(),
             "跳转到其他App",
             "JobScheduler",
@@ -61,7 +61,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class,
             HandlerThreadAct.class,
             MainActivity.class,
-            ActA.class,
+            com.example.liuj.liujdemo.module.android_base.MainAct.class,
             RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,
             com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,

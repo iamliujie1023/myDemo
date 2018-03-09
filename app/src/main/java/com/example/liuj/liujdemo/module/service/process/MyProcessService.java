@@ -1,12 +1,15 @@
 package com.example.liuj.liujdemo.module.service.process;
 
 import android.app.Service;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
 
+import com.example.liuj.liujdemo.home.MyApplication;
 import com.example.liuj.liujdemo.module.service.ILiujAidlInterface;
 import com.example.liuj.liujdemo.module.service.ILiujCallback;
 import com.example.liuj.sdk.LogUtils;
@@ -28,6 +31,10 @@ public class MyProcessService extends Service {
         LogUtils.i("receive msg from activity: " + str);
 
         mBinder.responseAct("hi Activity");
+
+        LocalBroadcastManager.getInstance(MyApplication.getInstance()).sendBroadcast(new Intent(MainProcessActivity.LOCAL_BC));
+
+        sendBroadcast(new Intent(MainProcessActivity.NORMALL_BC));
     }
 
     public class AidlBinder extends ILiujAidlInterface.Stub {
