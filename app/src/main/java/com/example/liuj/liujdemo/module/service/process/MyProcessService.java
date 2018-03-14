@@ -1,7 +1,6 @@
 package com.example.liuj.liujdemo.module.service.process;
 
 import android.app.Service;
-import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteCallbackList;
@@ -21,9 +20,24 @@ public class MyProcessService extends Service {
 
     private AidlBinder mBinder = new AidlBinder(this);
 
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        LogUtils.i("onCreate");
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        LogUtils.i("onStartCommand");
+        return super.onStartCommand(intent, flags, startId);
+    }
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
+        LogUtils.i("onBind");
+
         return mBinder;
     }
 

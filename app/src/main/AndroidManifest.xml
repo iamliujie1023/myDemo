@@ -135,7 +135,11 @@
         <activity android:name=".liujdemo.module.NestedScrolling.nestedscrollingparent.MainActivity"/>
         <activity android:name=".liujdemo.module.NestedScrolling.old.MainActivity"/>
 
+        <activity android:name=".liujdemo.module.webview.MainAct"/>
+        <activity android:name=".liujdemo.module.webview.base.MyHyBridBaseAct"/>
+        <activity android:name=".liujdemo.module.webview.action.base.MyActionWebViewAct"/>
 
+        <activity android:name=".liujdemo.module.customview.base_demo.ViewDemo"/>
     </application>
 
 </manifest>

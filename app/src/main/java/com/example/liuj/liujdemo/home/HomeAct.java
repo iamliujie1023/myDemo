@@ -52,7 +52,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "Service 组建间通讯",
             "bitmap",
             "AndroidDesignAct",
-            "滑动冲突 NestedScrolling"
+            "滑动冲突 NestedScrolling",
+            "webView"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -71,7 +72,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             MainAct.class,
             com.example.liuj.liujdemo.module.bitmap.MainAct.class,
             AndroidDesignAct.class,
-            com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class
+            com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class,
+            com.example.liuj.liujdemo.module.webview.MainAct.class
     };
 
     @Override
