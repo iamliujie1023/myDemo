@@ -140,6 +140,9 @@
         <activity android:name=".liujdemo.module.webview.action.base.MyActionWebViewAct"/>
 
         <activity android:name=".liujdemo.module.customview.base_demo.ViewDemo"/>
+
+        <activity android:name=".liujdemo.module.diyview.MainAct"/>
+        <activity android:name=".liujdemo.module.diyview.timeslot.TimeSlotAct"/>
     </application>
 
 </manifest>
