@@ -143,6 +143,9 @@
 
         <activity android:name=".liujdemo.module.diyview.MainAct"/>
         <activity android:name=".liujdemo.module.diyview.timeslot.TimeSlotAct"/>
+
+        <activity android:name=".liujdemo.module.circle_view.MainAct"/>
+        <activity android:name=".liujdemo.module.diyview.ptv.PTvMainAct"/>
     </application>
 
 </manifest>

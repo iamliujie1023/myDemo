@@ -7,4 +7,9 @@
     <color name="none_received">#999999</color>
     <color name="start_received">#00FF00</color>
     <color name="stop_received">#FF0000</color>
+
+
+    <color name="coloractionMode">#ff7086</color>
+    <color name="text_main_984aff">#984aff</color>
+
 </resources>
