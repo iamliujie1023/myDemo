@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseActivity;
 import com.example.liuj.liujdemo.home.IItemClickCallback;
+import com.example.liuj.liujdemo.module.view.event.EventMainAct;
 import com.example.liuj.liujdemo.module.view.position.ViewPositionAct;
 import com.example.liuj.liujdemo.module.view.scroller.ViewScrollScrollerAct;
 
@@ -29,11 +30,13 @@ public class ViewMain extends BaseActivity implements IItemClickCallback {
 
     private String[] strs = new String[]{
             ViewPositionAct.class.getSimpleName(),
-            ViewScrollScrollerAct.class.getSimpleName()
+            ViewScrollScrollerAct.class.getSimpleName(),
+            EventMainAct.class.getSimpleName()
     };
     private Class<?>[] clzs = new Class[]{
             ViewPositionAct.class,
-            ViewScrollScrollerAct.class
+            ViewScrollScrollerAct.class,
+            EventMainAct.class
     };
 
     @Override

@@ -2,6 +2,8 @@ package com.example.liuj.sdk;
 
 import android.util.Log;
 
+import com.orhanobut.logger.Logger;
+
 /**
  * Created by liuj on 2017/11/16.
  */
@@ -15,9 +17,13 @@ public class LogUtils {
     }
 
     public static void e(String msg) {
-        Log.e(MY_TAG, msg);
+        Logger.e(MY_TAG, msg);
     }
 
+
+    public static void d(String h, String msg) {
+        Logger.d(h, msg);
+    }
 
     public static final void println(String msg) {
         System.out.println(msg);

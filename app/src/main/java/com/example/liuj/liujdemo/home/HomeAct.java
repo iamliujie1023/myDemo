@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.module.android_base.NormallCaseActA;
 import com.example.liuj.liujdemo.module.android_design.AndroidDesignAct;
+import com.example.liuj.liujdemo.module.dialogfragment.DialogFragmentDemo1;
 import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
 import com.example.liuj.liujdemo.module.asynctask.Act;
 import com.example.liuj.liujdemo.module.customview.Main;
@@ -55,7 +56,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "滑动冲突 NestedScrolling",
             "webView",
             "自定义控件",
-            "圆角父控件"
+            "圆角父控件",
+            "dialogFragment"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -77,7 +79,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class,
             com.example.liuj.liujdemo.module.webview.MainAct.class,
             com.example.liuj.liujdemo.module.diyview.MainAct.class,
-            com.example.liuj.liujdemo.module.circle_view.MainAct.class
+            com.example.liuj.liujdemo.module.circle_view.MainAct.class,
+            com.example.liuj.liujdemo.module.dialogfragment.MainAct.class
     };
 
     @Override

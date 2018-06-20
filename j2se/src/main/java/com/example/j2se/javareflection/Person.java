@@ -29,6 +29,11 @@ public class Person {
 
     public String msg2 = "public field name(msg2)";
 
+    public boolean print() {
+        LogUtil.sysopl("lalalalal print");
+        return false;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

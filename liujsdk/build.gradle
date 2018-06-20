@@ -38,4 +38,6 @@ dependencies {
     api "com.jakewharton:butterknife:$rootProject.buter_knife_version"
 //    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.buter_knife_version"
 
+    api 'com.orhanobut:logger:2.2.0'
+
 }

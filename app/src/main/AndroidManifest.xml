@@ -146,6 +146,9 @@
 
         <activity android:name=".liujdemo.module.circle_view.MainAct"/>
         <activity android:name=".liujdemo.module.diyview.ptv.PTvMainAct"/>
+        <activity android:name=".liujdemo.module.view.event.EventMainAct"/>
+
+        <activity android:name=".liujdemo.module.dialogfragment.MainAct"/>
     </application>
 
 </manifest>
