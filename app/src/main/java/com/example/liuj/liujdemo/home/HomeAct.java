@@ -57,7 +57,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "webView",
             "自定义控件",
             "圆角父控件",
-            "dialogFragment"
+            "dialogFragment",
+            "scroll 相关控件"
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -80,7 +81,8 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             com.example.liuj.liujdemo.module.webview.MainAct.class,
             com.example.liuj.liujdemo.module.diyview.MainAct.class,
             com.example.liuj.liujdemo.module.circle_view.MainAct.class,
-            com.example.liuj.liujdemo.module.dialogfragment.MainAct.class
+            com.example.liuj.liujdemo.module.dialogfragment.MainAct.class,
+            com.example.liuj.liujdemo.module.scroll_extend.MainAct.class
     };
 
     @Override

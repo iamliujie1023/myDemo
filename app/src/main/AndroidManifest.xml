@@ -149,6 +149,9 @@
         <activity android:name=".liujdemo.module.view.event.EventMainAct"/>
 
         <activity android:name=".liujdemo.module.dialogfragment.MainAct"/>
+
+        <activity android:name=".liujdemo.module.scroll_extend.MainAct"/>
+        <activity android:name=".liujdemo.module.scroll_extend.pagescroll.PageScrollAct"/>
     </application>
 
 </manifest>

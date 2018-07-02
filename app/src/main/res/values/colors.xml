@@ -12,4 +12,11 @@
     <color name="coloractionMode">#ff7086</color>
     <color name="text_main_984aff">#984aff</color>
 
+    <color name="white">#ffffff</color>
+    <color name="red">#d82440</color>
+    <color name="blue">#303F9F</color>
+    <color name="purple">#984aff</color>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+
 </resources>
