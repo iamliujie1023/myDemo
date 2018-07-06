@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
 
-import com.example.liuj.liujdemo.home.MyApplication;
+import com.example.liuj.liujdemo.application.MyApplication;
 import com.example.liuj.liujdemo.module.service.ILiujAidlInterface;
 import com.example.liuj.liujdemo.module.service.ILiujCallback;
 import com.example.liuj.sdk.LogUtils;

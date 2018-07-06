@@ -1,4 +1,4 @@
-package com.example.liuj.liujdemo.home;
+package com.example.liuj.liujdemo.application;
 
 import android.app.Activity;
 import android.app.Application;

@@ -3,7 +3,7 @@ package com.example.liuj.liujdemo.view;
 import android.content.Context;
 import android.util.DisplayMetrics;
 
-import com.example.liuj.liujdemo.home.MyApplication;
+import com.example.liuj.liujdemo.application.MyApplication;
 
 
 /**

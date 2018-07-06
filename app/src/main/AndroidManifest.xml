@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.liuj">
 
+    <!--网络-->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!--网络变化-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--存储到C盘-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--存储到其他盘-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".liujdemo.home.MyApplication">
+        android:name=".liujdemo.application.MyApplication">
         <activity android:name=".liujdemo.home.HomeAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -152,6 +159,14 @@
 
         <activity android:name=".liujdemo.module.scroll_extend.MainAct"/>
         <activity android:name=".liujdemo.module.scroll_extend.pagescroll.PageScrollAct"/>
+
+        <activity android:name=".liujdemo.module.http.MainAct"/>
+        <activity android:name=".liujdemo.module.glide.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.smart.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.smart.SimpleAct"/>
+        <activity android:name=".liujdemo.module.banner.BannerAct"/>
+
     </application>
 
 </manifest>

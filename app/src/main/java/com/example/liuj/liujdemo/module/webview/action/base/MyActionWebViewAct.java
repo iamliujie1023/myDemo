@@ -10,7 +10,6 @@ import android.webkit.WebViewClient;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseActivity;
-import com.example.liuj.liujdemo.home.MyApplication;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,7 +17,7 @@ import butterknife.ButterKnife;
 /**
  * Created by jliu on 2018/3/12.
  */
-public class MyActionWebViewAct extends BaseActivity{
+public class MyActionWebViewAct extends BaseActivity {
 
     @BindView(R.id.webview)
     WebView mWebView;
@@ -36,7 +35,7 @@ public class MyActionWebViewAct extends BaseActivity{
 
         mWebView.loadUrl("file:///android_asset/my_action_demo.html");
 
-        mWebView.setWebViewClient(new WebViewClient(){
+        mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
                 return super.shouldInterceptRequest(view, request);

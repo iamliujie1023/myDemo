@@ -33,11 +33,27 @@ dependencies {
     api "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
     api "com.android.support:support-v4:$rootProject.supportLibraryVersion"
     api "com.android.support:percent:$rootProject.supportLibraryVersion"
-
-
-    api "com.jakewharton:butterknife:$rootProject.buter_knife_version"
 //    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.buter_knife_version"
 
+    api "com.jakewharton:butterknife:$rootProject.buter_knife_version"
+    api "org.greenrobot:eventbus:$rootProject.eventBusVersion"
+    api "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    api "com.google.code.gson:gson:$rootProject.gsonVersion"
+
     api 'com.orhanobut:logger:2.2.0'
+
+//    https://muyangmin.github.io/glide-docs-cn/doc/download-setup.html#android-sdk-%E8%A6%81%E6%B1%82
+    api ("com.github.bumptech.glide:glide:4.7.1") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //GlideModule注解
+    api 'com.github.bumptech.glide:annotations:4.7.1'
+
+    //smart 下拉刷新心
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-10'
+
+    //轮播
+    api 'com.youth.banner:banner:1.4.10'
 
 }

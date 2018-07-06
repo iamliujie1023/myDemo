@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.base.BaseActivity;
-import com.example.liuj.liujdemo.home.MyApplication;
+import com.example.liuj.liujdemo.application.MyApplication;
 import com.example.liuj.liujdemo.module.service.ILiujAidlInterface;
 import com.example.liuj.liujdemo.module.service.ILiujCallback;
 import com.example.liuj.sdk.LogUtils;

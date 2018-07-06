@@ -1,4 +1,4 @@
-package beibei.husor.com.j2se_2;
+package com.example.j2se.demo1;
 
 import com.example.j2se.serializable.SDemo;
 import com.example.j2se.serializable.SerializeableDemoModel;

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.liuj.R;
 import com.example.liuj.liujdemo.module.android_base.NormallCaseActA;
 import com.example.liuj.liujdemo.module.android_design.AndroidDesignAct;
+import com.example.liuj.liujdemo.module.banner.BannerAct;
 import com.example.liuj.liujdemo.module.dialogfragment.DialogFragmentDemo1;
 import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
 import com.example.liuj.liujdemo.module.asynctask.Act;
@@ -58,7 +59,11 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "自定义控件",
             "圆角父控件",
             "dialogFragment",
-            "scroll 相关控件"
+            "scroll 相关控件",
+            "http request",
+            "imageloader - glide",
+            "pull to refresh",
+            "banner "
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -82,7 +87,11 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             com.example.liuj.liujdemo.module.diyview.MainAct.class,
             com.example.liuj.liujdemo.module.circle_view.MainAct.class,
             com.example.liuj.liujdemo.module.dialogfragment.MainAct.class,
-            com.example.liuj.liujdemo.module.scroll_extend.MainAct.class
+            com.example.liuj.liujdemo.module.scroll_extend.MainAct.class,
+            com.example.liuj.liujdemo.module.http.MainAct.class,
+            com.example.liuj.liujdemo.module.glide.MainAct.class,
+            com.example.liuj.liujdemo.module.pulltofresh.MainAct.class,
+            BannerAct.class
     };
 
     @Override

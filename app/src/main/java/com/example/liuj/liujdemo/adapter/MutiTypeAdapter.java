@@ -27,13 +27,17 @@ public class MutiTypeAdapter extends RecyclerView.Adapter {
         mContext = context;
     }
 
-    public void reset(List<BaseModel> list) {
+    public void clear() {
+        mData.clear();
+    }
+
+    public void reset(List<? extends BaseModel> list) {
         mData.clear();
         mData.addAll(list);
         notifyDataSetChanged();
     }
 
-    public void addAll(List<BaseModel> list) {
+    public void addAll(List<? extends BaseModel> list) {
         int start = mData.size();
         mData.addAll(list);
         notifyItemRangeChanged(start, mData.size());

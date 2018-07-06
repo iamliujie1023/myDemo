@@ -5,7 +5,7 @@ import android.os.Build;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
-import com.example.liuj.liujdemo.home.MyApplication;
+import com.example.liuj.liujdemo.application.MyApplication;
 import com.example.liuj.sdk.LogUtils;
 
 import org.json.JSONException;

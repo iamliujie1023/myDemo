@@ -1,1 +1,1 @@
-include ':app', ':j2se', ':liujsdk', ':fileutil', ':j2se_2'
+include ':app', ':j2se', ':liujsdk', ':fileutil', ':j2se_2', ':glide'
