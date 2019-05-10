@@ -18,6 +18,8 @@ public class Main {
 
             System.out.println("update3");
 
+            System.out.println("update4");
+
 
 //            System.out.println("在另一个工程下反序列化");
 //            SerializeableDemoModel model = deserialize();
