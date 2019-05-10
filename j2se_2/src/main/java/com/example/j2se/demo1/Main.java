@@ -15,6 +15,10 @@ public class Main {
             System.out.println("update1");
 
 
+            System.out.println("update1 by fea/as3");
+
+
+
 //            SerializeableDemoModel model = deserialize();
 //            System.out.println(model);
 
