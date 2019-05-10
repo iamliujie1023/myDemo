@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.example.liuj.liujdemo.module.circle_view.RoundAngleFrameLayout
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        app:radius="8dp">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:background="@drawable/img1"/>
+    </com.example.liuj.liujdemo.module.circle_view.RoundAngleFrameLayout>
+
+    <com.example.liuj.liujdemo.module.circle_view.RoundAngleFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:radius="8dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/circle_vp1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+    </com.example.liuj.liujdemo.module.circle_view.RoundAngleFrameLayout>
+
+
+</LinearLayout>

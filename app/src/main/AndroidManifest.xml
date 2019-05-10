@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.liuj">
 
+    <!--网络-->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!--网络变化-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--存储到C盘-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--存储到其他盘-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +17,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".liujdemo.application.MyApplication">
         <activity android:name=".liujdemo.home.HomeAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -64,8 +72,11 @@
 
         <activity android:name=".liujdemo.module.dexclassloader.MainActivity"/>
 
-        <activity android:name=".liujdemo.module.android_base.ActA"/>
+        <activity android:name=".liujdemo.module.android_base.MainAct"/>
+        <activity android:name=".liujdemo.module.android_base.NormallCaseActA"/>
         <activity android:name=".liujdemo.module.android_base.ActB"/>
+        <activity android:name=".liujdemo.module.android_base.ConfigChangeCaseAct"/>
+        <activity android:name=".liujdemo.module.android_base.ExceptionCaseAct"/>
 
         <activity android:name=".liujdemo.module.recyclerview.RvMainAct"/>
         <activity android:name=".liujdemo.module.recyclerview.ItemTouchHelperDemoAct"/>
@@ -130,6 +141,31 @@
         <activity android:name=".liujdemo.module.NestedScrolling.MainAct"/>
         <activity android:name=".liujdemo.module.NestedScrolling.nestedscrollingparent.MainActivity"/>
         <activity android:name=".liujdemo.module.NestedScrolling.old.MainActivity"/>
+
+        <activity android:name=".liujdemo.module.webview.MainAct"/>
+        <activity android:name=".liujdemo.module.webview.base.MyHyBridBaseAct"/>
+        <activity android:name=".liujdemo.module.webview.action.base.MyActionWebViewAct"/>
+
+        <activity android:name=".liujdemo.module.customview.base_demo.ViewDemo"/>
+
+        <activity android:name=".liujdemo.module.diyview.MainAct"/>
+        <activity android:name=".liujdemo.module.diyview.timeslot.TimeSlotAct"/>
+
+        <activity android:name=".liujdemo.module.circle_view.MainAct"/>
+        <activity android:name=".liujdemo.module.diyview.ptv.PTvMainAct"/>
+        <activity android:name=".liujdemo.module.view.event.EventMainAct"/>
+
+        <activity android:name=".liujdemo.module.dialogfragment.MainAct"/>
+
+        <activity android:name=".liujdemo.module.scroll_extend.MainAct"/>
+        <activity android:name=".liujdemo.module.scroll_extend.pagescroll.PageScrollAct"/>
+
+        <activity android:name=".liujdemo.module.http.MainAct"/>
+        <activity android:name=".liujdemo.module.glide.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.smart.MainAct"/>
+        <activity android:name=".liujdemo.module.pulltofresh.smart.SimpleAct"/>
+        <activity android:name=".liujdemo.module.banner.BannerAct"/>
 
     </application>
 

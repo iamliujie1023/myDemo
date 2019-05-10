@@ -4,10 +4,12 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import com.example.liuj.liujdemo.holder.BannerHolder;
 import com.example.liuj.liujdemo.holder.BaseHolder;
 import com.example.liuj.liujdemo.holder.ModelMapActHolder;
 import com.example.liuj.liujdemo.holder.NormalHolder;
 import com.example.liuj.liujdemo.holder.StatusHolder;
+import com.example.liuj.liujdemo.model.BannerModel;
 import com.example.liuj.liujdemo.model.ModelMapAatModel;
 import com.example.liuj.liujdemo.model.BaseModel;
 import com.example.liuj.liujdemo.model.NormalModel;
@@ -24,6 +26,7 @@ class _MutiTypeAdapterHelper {
     public static final int TYPE_NORMALL = 1 << 20;
     public static final int TYPE_STATUS = TYPE_NORMALL + 1;
     public static final int TYPE_MODEL_MAP_ACT = TYPE_NORMALL + 2;
+    public static final int TYPE_BANNER_DEMO_ITEM = TYPE_NORMALL + 3;
 
     private HashMap<Type, Integer> mTypeMapType;
 
@@ -32,6 +35,7 @@ class _MutiTypeAdapterHelper {
         mTypeMapType.put(NormalModel.class, TYPE_NORMALL);
         mTypeMapType.put(StatusModel.class, TYPE_STATUS);
         mTypeMapType.put(ModelMapAatModel.class, TYPE_MODEL_MAP_ACT);
+        mTypeMapType.put(BannerModel.class, TYPE_BANNER_DEMO_ITEM);
     }
 
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType, Context context) {
@@ -42,6 +46,8 @@ class _MutiTypeAdapterHelper {
                 return StatusHolder.newInstance(parent, context);
             case TYPE_MODEL_MAP_ACT:
                 return ModelMapActHolder.newInstance(parent, context);
+            case TYPE_BANNER_DEMO_ITEM:
+                return BannerHolder.obtain(context, parent);
             default:
                 return NormalHolder.newInstance(parent, context);
         }

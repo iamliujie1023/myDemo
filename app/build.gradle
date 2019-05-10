@@ -33,8 +33,11 @@ dependencies {
 //    compile "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
 //    compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
 
-    implementation(project(":liujsdk"))
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.buter_knife_version"
+    implementation(project(":liujsdk"))
+//    api (project(":glide")) {
+//        exclude group: "com.android.support"
+//    }
 
 //    implementation "com.jakewharton:butterknife:$rootProject.buter_knife_version"
 }

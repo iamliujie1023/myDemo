@@ -13,9 +13,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.liuj.R;
+import com.example.liuj.liujdemo.module.android_base.NormallCaseActA;
 import com.example.liuj.liujdemo.module.android_design.AndroidDesignAct;
+import com.example.liuj.liujdemo.module.banner.BannerAct;
+import com.example.liuj.liujdemo.module.dialogfragment.DialogFragmentDemo1;
 import com.example.liuj.liujdemo.module.service.IntentService.IntentServiceAct;
-import com.example.liuj.liujdemo.module.android_base.ActA;
 import com.example.liuj.liujdemo.module.asynctask.Act;
 import com.example.liuj.liujdemo.module.customview.Main;
 import com.example.liuj.liujdemo.module.dexclassloader.MainActivity;
@@ -42,7 +44,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class.getSimpleName(),
             "handlerThreadDemo2",
             MainActivity.class.getSimpleName(),
-            "android base",
+            "android 生命周期",
             RvMainAct.class.getSimpleName(),
             "跳转到其他App",
             "JobScheduler",
@@ -52,7 +54,16 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             "Service 组建间通讯",
             "bitmap",
             "AndroidDesignAct",
-            "滑动冲突 NestedScrolling"
+            "滑动冲突 NestedScrolling",
+            "webView",
+            "自定义控件",
+            "圆角父控件",
+            "dialogFragment",
+            "scroll 相关控件",
+            "http request",
+            "imageloader - glide",
+            "pull to refresh",
+            "banner "
     };
 
     private Class<?>[] clzs = new Class[]{
@@ -61,7 +72,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             HandlerThreadActivity.class,
             HandlerThreadAct.class,
             MainActivity.class,
-            ActA.class,
+            com.example.liuj.liujdemo.module.android_base.MainAct.class,
             RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,
             com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,
@@ -71,7 +82,16 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
             MainAct.class,
             com.example.liuj.liujdemo.module.bitmap.MainAct.class,
             AndroidDesignAct.class,
-            com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class
+            com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class,
+            com.example.liuj.liujdemo.module.webview.MainAct.class,
+            com.example.liuj.liujdemo.module.diyview.MainAct.class,
+            com.example.liuj.liujdemo.module.circle_view.MainAct.class,
+            com.example.liuj.liujdemo.module.dialogfragment.MainAct.class,
+            com.example.liuj.liujdemo.module.scroll_extend.MainAct.class,
+            com.example.liuj.liujdemo.module.http.MainAct.class,
+            com.example.liuj.liujdemo.module.glide.MainAct.class,
+            com.example.liuj.liujdemo.module.pulltofresh.MainAct.class,
+            BannerAct.class
     };
 
     @Override

@@ -6,7 +6,9 @@ import android.os.IBinder;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
 
+import com.example.liuj.liujdemo.application.MyApplication;
 import com.example.liuj.liujdemo.module.service.ILiujAidlInterface;
 import com.example.liuj.liujdemo.module.service.ILiujCallback;
 import com.example.liuj.sdk.LogUtils;
@@ -18,9 +20,24 @@ public class MyProcessService extends Service {
 
     private AidlBinder mBinder = new AidlBinder(this);
 
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        LogUtils.i("onCreate");
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        LogUtils.i("onStartCommand");
+        return super.onStartCommand(intent, flags, startId);
+    }
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
+        LogUtils.i("onBind");
+
         return mBinder;
     }
 
@@ -28,6 +45,10 @@ public class MyProcessService extends Service {
         LogUtils.i("receive msg from activity: " + str);
 
         mBinder.responseAct("hi Activity");
+
+        LocalBroadcastManager.getInstance(MyApplication.getInstance()).sendBroadcast(new Intent(MainProcessActivity.LOCAL_BC));
+
+        sendBroadcast(new Intent(MainProcessActivity.NORMALL_BC));
     }
 
     public class AidlBinder extends ILiujAidlInterface.Stub {

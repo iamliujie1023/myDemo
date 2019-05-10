@@ -46,6 +46,13 @@ public class Main {
             method2.setAccessible(true);
             method2.invoke(obj, "调用private方法");
 
+
+            //2.调用private方法
+            Method method3 = clz.getDeclaredMethod("print");
+            //设置是否允许访问，因为该变量是private的，所以要手动设置允许访问
+            method3.setAccessible(true);
+            method3.invoke(obj);
+
             //3.获取所有的方法集合. 得到该类所有的public方法，包括父类的
             Method[] mtd1 = clz.getMethods();
             LogUtil.sysopl("========clz.getMethods========");

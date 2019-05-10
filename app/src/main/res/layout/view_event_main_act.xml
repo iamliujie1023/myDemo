@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.liuj.liujdemo.module.view.event.MyTestViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_event_root"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@color/none_received">
+
+    <com.example.liuj.liujdemo.module.view.event.MyTestView
+        android:id="@+id/view_event_view_child"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/text_main_984aff"/>
+
+</com.example.liuj.liujdemo.module.view.event.MyTestViewGroup>

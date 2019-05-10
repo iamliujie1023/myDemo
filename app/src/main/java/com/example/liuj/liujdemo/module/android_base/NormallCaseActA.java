@@ -17,9 +17,9 @@ import butterknife.ButterKnife;
  * Created by liuj on 2017/11/22.
  */
 
-public class ActA extends BaseActivity {
+public class NormallCaseActA extends BaseActivity {
 
-    private static final String TAG = ActA.class.getSimpleName();
+    private static final String TAG = NormallCaseActA.class.getSimpleName();
 
     @BindView(R.id.tv_1)
     TextView tv1;
@@ -35,7 +35,7 @@ public class ActA extends BaseActivity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IntentUtil.goToTargetAct(ActA.this, ActB.class);
+                IntentUtil.goToTargetAct(NormallCaseActA.this, ActB.class);
             }
         });
         Log.i("liujie", TAG + " onCreate");
@@ -70,6 +70,20 @@ public class ActA extends BaseActivity {
         super.onResume();
 
         Log.i("liujie", TAG + " onResume");
-
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        Log.i("liujie", TAG + " onRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Log.i("liujie", TAG + " onDestroy");
+    }
+
 }
