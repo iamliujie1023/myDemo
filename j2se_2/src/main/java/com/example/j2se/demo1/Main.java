@@ -12,6 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
+            System.out.println("update1");
+
 //            System.out.println("在另一个工程下反序列化");
 //            SerializeableDemoModel model = deserialize();
 //            System.out.println(model);
