@@ -15,9 +15,7 @@ public class Main {
             System.out.println("update1");
 
             System.out.println("update by dev_1");
-
-
-            //            System.out.println("在另一个工程下反序列化");
+            System.out.println("update by dev");
 //            SerializeableDemoModel model = deserialize();
 //            System.out.println(model);
 
