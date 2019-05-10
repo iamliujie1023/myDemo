@@ -14,17 +14,7 @@ public class Main {
         try {
             System.out.println("update1");
 
-            System.out.println("update2");
 
-            System.out.println("update3");
-
-            System.out.println("update4");
-
-            System.out.println("update5");
-
-
-            System.out.println("update by dev_1");
-            System.out.println("update by dev");
 //            SerializeableDemoModel model = deserialize();
 //            System.out.println(model);
 
