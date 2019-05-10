@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileutil/fileutil.iml" filepath="$PROJECT_DIR$/fileutil/fileutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glide/glide.iml" filepath="$PROJECT_DIR$/glide/glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2se/j2se.iml" filepath="$PROJECT_DIR$/j2se/j2se.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j2se_2/j2se_2.iml" filepath="$PROJECT_DIR$/j2se_2/j2se_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liujsdk/liujsdk.iml" filepath="$PROJECT_DIR$/liujsdk/liujsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myDemo.iml" filepath="$PROJECT_DIR$/myDemo.iml" />
+    </modules>
+  </component>
+</project>
