@@ -12,33 +12,31 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            System.out.println("update1");
+            //System.out.println("update1");
+            //System.out.println("update1 by fea/as3");
 
+            int i = 1 << 1;
+            int i2 = 1 << 2;
+            System.out.println(i | i2);
+            System.out.println((i | i2) & i);
 
-            System.out.println("update1 by fea/as3");
+            //            SerializeableDemoModel model = deserialize();
+            //            System.out.println(model);
 
-
-
-//            SerializeableDemoModel model = deserialize();
-//            System.out.println(model);
-
-
-            System.out.println("在另一个工程下反序列化");
-            SDemo model = deserialize2();
-            System.out.println(model);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+            //System.out.println("在另一个工程下反序列化");
+            //SDemo model = deserialize2();
+            //System.out.println(model);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-//    public static SerializeableDemoModel deserialize() throws IOException, ClassNotFoundException {
-//        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File("s_deme")));
-//        SerializeableDemoModel person = (SerializeableDemoModel) ois.readObject();
-//        System.out.println("SerializeableDemoModel 对象反序列化成功！");
-//        return person;
-//    }
+    //    public static SerializeableDemoModel deserialize() throws IOException, ClassNotFoundException {
+    //        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File("s_deme")));
+    //        SerializeableDemoModel person = (SerializeableDemoModel) ois.readObject();
+    //        System.out.println("SerializeableDemoModel 对象反序列化成功！");
+    //        return person;
+    //    }
 
     public static SDemo deserialize2() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(new File("s_deme2")));
@@ -46,5 +44,4 @@ public class Main {
         System.out.println("SDemo 对象反序列化成功！");
         return person;
     }
-
 }
