@@ -26,6 +26,7 @@ import com.example.liuj.liujdemo.module.handlerthread.HandlerThreadAct;
 import com.example.liuj.liujdemo.module.recyclerview.RvMainAct;
 import com.example.liuj.liujdemo.module.service.MainAct;
 import com.example.liuj.liujdemo.module.taskaffinity.ActController;
+import com.example.liuj.liujdemo.module.text.ToggleEllipsizeAct;
 import com.example.liuj.liujdemo.module.view.ViewMain;
 
 import butterknife.BindView;
@@ -38,60 +39,31 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
 
     private MyAdapter mAdapter;
 
-    private String[] strs = new String[]{
-            ActController.class.getSimpleName(),
-            ViewMain.class.getSimpleName(),
-            HandlerThreadActivity.class.getSimpleName(),
-            "handlerThreadDemo2",
-            MainActivity.class.getSimpleName(),
-            "android 生命周期",
-            RvMainAct.class.getSimpleName(),
-            "跳转到其他App",
-            "JobScheduler",
-            "customView",
-            "AsyncTask",
-            "IntentService",
-            "Service 组建间通讯",
-            "bitmap",
-            "AndroidDesignAct",
-            "滑动冲突 NestedScrolling",
-            "webView",
-            "自定义控件",
-            "圆角父控件",
-            "dialogFragment",
-            "scroll 相关控件",
-            "http request",
-            "imageloader - glide",
-            "pull to refresh",
-            "banner "
+    private String[] strs = new String[] {
+            "2019Q3",
+            ActController.class.getSimpleName(), ViewMain.class.getSimpleName(),
+            HandlerThreadActivity.class.getSimpleName(), "handlerThreadDemo2", MainActivity.class.getSimpleName(),
+            "android 生命周期", RvMainAct.class.getSimpleName(), "跳转到其他App", "JobScheduler", "customView", "AsyncTask",
+            "IntentService", "Service 组建间通讯", "bitmap", "AndroidDesignAct", "滑动冲突 NestedScrolling", "webView", "自定义控件",
+            "圆角父控件", "dialogFragment", "scroll 相关控件", "http request", "imageloader - glide", "pull to refresh",
+            "banner ", "toggleEllipsize"
     };
 
-    private Class<?>[] clzs = new Class[]{
-            ActController.class,
-            ViewMain.class,
-            HandlerThreadActivity.class,
-            HandlerThreadAct.class,
-            MainActivity.class,
-            com.example.liuj.liujdemo.module.android_base.MainAct.class,
-            RvMainAct.class,
+    private Class<?>[] clzs = new Class[] {
+            com.example.liuj2019q3.MainAct.class,
+            ActController.class, ViewMain.class, HandlerThreadActivity.class, HandlerThreadAct.class,
+            MainActivity.class, com.example.liuj.liujdemo.module.android_base.MainAct.class, RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,
-            com.example.liuj.liujdemo.module.jobscheduler.MainAct.class,
-            Main.class,
-            Act.class,
-            IntentServiceAct.class,
-            MainAct.class,
-            com.example.liuj.liujdemo.module.bitmap.MainAct.class,
-            AndroidDesignAct.class,
+            com.example.liuj.liujdemo.module.jobscheduler.MainAct.class, Main.class, Act.class, IntentServiceAct.class,
+            MainAct.class, com.example.liuj.liujdemo.module.bitmap.MainAct.class, AndroidDesignAct.class,
             com.example.liuj.liujdemo.module.NestedScrolling.MainAct.class,
             com.example.liuj.liujdemo.module.webview.MainAct.class,
             com.example.liuj.liujdemo.module.diyview.MainAct.class,
             com.example.liuj.liujdemo.module.circle_view.MainAct.class,
             com.example.liuj.liujdemo.module.dialogfragment.MainAct.class,
             com.example.liuj.liujdemo.module.scroll_extend.MainAct.class,
-            com.example.liuj.liujdemo.module.http.MainAct.class,
-            com.example.liuj.liujdemo.module.glide.MainAct.class,
-            com.example.liuj.liujdemo.module.pulltofresh.MainAct.class,
-            BannerAct.class
+            com.example.liuj.liujdemo.module.http.MainAct.class, com.example.liuj.liujdemo.module.glide.MainAct.class,
+            com.example.liuj.liujdemo.module.pulltofresh.MainAct.class, BannerAct.class, ToggleEllipsizeAct.class
     };
 
     @Override
@@ -176,6 +148,5 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
                 }
             });
         }
-
     }
 }
