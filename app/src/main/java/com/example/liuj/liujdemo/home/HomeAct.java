@@ -40,6 +40,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     private MyAdapter mAdapter;
 
     private String[] strs = new String[] {
+            "2019Q3",
             ActController.class.getSimpleName(), ViewMain.class.getSimpleName(),
             HandlerThreadActivity.class.getSimpleName(), "handlerThreadDemo2", MainActivity.class.getSimpleName(),
             "android 生命周期", RvMainAct.class.getSimpleName(), "跳转到其他App", "JobScheduler", "customView", "AsyncTask",
@@ -49,6 +50,7 @@ public class HomeAct extends AppCompatActivity implements IItemClickCallback {
     };
 
     private Class<?>[] clzs = new Class[] {
+            com.example.liuj2019q3.MainAct.class,
             ActController.class, ViewMain.class, HandlerThreadActivity.class, HandlerThreadAct.class,
             MainActivity.class, com.example.liuj.liujdemo.module.android_base.MainAct.class, RvMainAct.class,
             com.example.liuj.liujdemo.module.jump_other_app_act.MainAct.class,

@@ -35,7 +35,9 @@ dependencies {
 
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.buter_knife_version"
     implementation(project(":liujsdk"))
-//    api (project(":glide")) {
+    implementation(project(":2019q3"))
+
+    //    api (project(":glide")) {
 //        exclude group: "com.android.support"
 //    }
 
